@@ -19,7 +19,7 @@ $(document).ready(function () {
             openEditForm(entity, item);
           });
           const deleteButton = $("<button>Delete</button>").click(function () {
-            console.log(`Deleting ${entity} with ID: ${item.id}`); // Console log item.id
+            console.log(`Deleting ${entity} with ID: ${item.id}`);
             deleteEntity(entity, item.id);
           });
           actions.append(editButton).append(deleteButton);
@@ -51,6 +51,7 @@ $(document).ready(function () {
       $("#member-phone").val(item.phone_number);
       $("#add-member-button").hide();
       $("#save-member-button").show();
+      0;
     } else if (entity === "loans") {
       $("#loan-id").val(item.id);
       $("#loan-book-id").val(item.book_id);
@@ -80,17 +81,17 @@ $(document).ready(function () {
   function clearForm(entity) {
     if (entity === "books") {
       $("#book-form")[0].reset();
-      $("#book-id").val(""); // Clear the ID field
+      $("#book-id").val("");
       $("#add-book-button").show();
       $("#save-book-button").hide();
     } else if (entity === "members") {
       $("#member-form")[0].reset();
-      $("#member-id").val(""); // Clear the ID field
+      $("#member-id").val("");
       $("#add-member-button").show();
       $("#save-member-button").hide();
     } else if (entity === "loans") {
       $("#loan-form")[0].reset();
-      $("#loan-id").val(""); // Clear the ID field
+      $("#loan-id").val("");
       $("#add-loan-button").show();
       $("#save-loan-button").hide();
     }
