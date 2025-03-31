@@ -1,0 +1,68 @@
+< <!-- I call the testers in the Main.js file -->
+
+    !DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Library Management System Testers</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="main.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Library Management System</h1>
+
+        <h2>Books</h2>
+        <table border="1" id="books-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Published Year</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h2>Members</h2>
+        <table border="1" id="members-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Membership Date</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h2>Loans</h2>
+        <table border="1" id="loans-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Book ID</th>
+                    <th>Member ID</th>
+                    <th>Loan Date</th>
+                    <th>Return Date</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+
+        <h2>JSON Output</h2>
+        <button id="fetch-json">Fetch JSON Data</button>
+        <pre id="json-output"></pre>
+    </body>
+
+    </html>
