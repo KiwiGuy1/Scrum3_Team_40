@@ -19,6 +19,7 @@ $(document).ready(function () {
             openEditForm(entity, item);
           });
           const deleteButton = $("<button>Delete</button>").click(function () {
+            console.log(`Deleting ${entity} with ID: ${item.id}`); // Console log item.id
             deleteEntity(entity, item.id);
           });
           actions.append(editButton).append(deleteButton);
